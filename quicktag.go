@@ -139,7 +139,7 @@ func genType(t Type, r *genRecords) Type {
 		}
 		var gt Type
 		if tm["quicktag"] == "-" {
-			gt = t
+			gt = f.Type
 		} else {
 			gt = genType(f.Type, r)
 		}
